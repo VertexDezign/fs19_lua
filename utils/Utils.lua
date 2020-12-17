@@ -1,3 +1,4 @@
+---@class Utils
 Utils = {}
 
 function Utils:getMasterVolumeFromIndex() end
@@ -14,7 +15,10 @@ function Utils:getUIScaleFromIndex() end
 function Utils:getPerformanceClassIndex() end
 function Utils:renderTextAtWorldPosition() end
 function Utils:getMovedLimitedValue() end
-function Utils:getFilename() end
+---@param file string
+---@param directory string
+---@return string
+function Utils:getFilename(file, directory) end
 function Utils:limitTextToWidth() end
 function Utils:getFilenameInfo() end
 function Utils:getCoinToss() end

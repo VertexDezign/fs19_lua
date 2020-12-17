@@ -1,4 +1,5 @@
 -------- INSPECT
+---@global
 _G = {
     AIConveyorBelt = {
         -- MAX_DEPTH inspect limit
@@ -2414,6 +2415,7 @@ _G = {
     UserManager = {
         -- MAX_DEPTH inspect limit
     },
+    ---@type Utils
     Utils = {
         -- MAX_DEPTH inspect limit
     },
@@ -2911,6 +2913,7 @@ _G = {
     g_lastMousePosY = 0.49907407164574,
     g_lastTouchPosX = 0,
     g_lastTouchPosY = 0,
+    ---@type LogManager
     g_logManager = {
         -- MAX_DEPTH inspect limit
     },
@@ -3146,6 +3149,9 @@ _G = {
         -- MAX_DEPTH inspect limit
     }
 }
+
+g_currentModDirectory = ""
+g_currentModName = ""
 
 function Class() end
 function InitClientOnce() end
@@ -4249,7 +4255,8 @@ function simulateParticleSystems() end
 function simulatePhysics() end
 function simulatePhysicsTimeScale() end
 function smoothDensityMapHeightAtWorldPos() end
-function source() end
+---@param filename string
+function source(filename) end
 function splitShape() end
 function startDevClient() end
 function startDevServer() end

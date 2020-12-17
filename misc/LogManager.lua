@@ -1,3 +1,5 @@
+--
+---@class LogManager
 LogManager = {
   loadedMapData = false
 }
